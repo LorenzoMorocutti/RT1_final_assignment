@@ -17,7 +17,7 @@ It's possible to download the workspace and the slam package from the repository
 
 After having launched all the nodes, the node graph will look like this:
 
-![immagine](final_assignment_nodes_graph.jpeg).
+![immagine](final_assignment_nodes_graph.jpg).
 
 ## User Interface
 
