@@ -15,18 +15,30 @@ It's possible to download the workspace and the slam package from the repository
 * In the third one we have to type `rosrun final_assignment autonomous.py` after we have launched the UI and chose the first modality; 
 * In the fourth one we have to type `rosrun final_assignment teleop_twist.py`, this time at any moment we want, it doesn't matter;
 
-After having launched all the nodes, the node graph will look like this: ![immagine](final_assignment_nodes_graph.jpeg).
+After having launched all the nodes, the node graph will look like this:
+
+![immagine](final_assignment_nodes_graph.jpeg).
 
 ## User Interface
 
 I decided to create the user interface through a FSM thanks to the smach library of ROS. The concept is to start the in the idle modality and then, based on the user inputs, move through the states that corresponds to the driving modalities.
-Here I report a simple scheme of the state machine, with the input to change the state: ![immagine](state_machine.jpg)
+Here I report a simple scheme of the state machine, with the input to change the state: 
+
+![immagine](state_machine.jpg)
 
 ## Autonomous and Teleoperation nodes
 
 I decided to let the user open various tabs in the terminal because it is more clear what we are doing. This way, also the instructions on how to enter/exit a modality and what to do inside of it, don't overlap.
-Here I report the flow chart of the code of the Autonomous modality: ![immagine](autonomous_flowchart.jpg)
-and the flow chart of the code of the Teleoperation modality: ![immagine](teleoperation_flowchart.jpg)
+Here I report the flow chart of the code of the Autonomous modality:
+
+![immagine](autonomous_flowchart.jpg)
+
+
+and the flow chart of the code of the Teleoperation modality:
+
+![immagine](teleoperation_flowchart.jpg)
+
+
 I would like the reader to notiche that the blue part of the scheme is running only if we are in the assistive modality.
 
 ## Launch files
