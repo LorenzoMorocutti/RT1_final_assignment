@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+	<include file="$(find final_assignment)/launch/simulation_gmapping.launch"/>
+	<include file="$(find final_assignment)/launch/move_base.launch"/>
+	<param name="modality" type="int" value="4" />
+
+</launch>
